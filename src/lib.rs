@@ -101,9 +101,9 @@ fn Control(cx: Scope) -> Element {
         <div>
             <input value=name.get() on:change=move |e| set_name.update(|v| *v = event_target_value(&e)) />
             <select value=assignee.get() on:change=move |e| set_assignee.update(|v| *v = event_target_value(&e)) >
-                <option value="🐱">"🐱"</option>
-                <option value="🐶">"🐶"</option>
-                <option value="🐹">"🐹"</option>
+                <option value="🐧">"🐧"</option>
+                <option value="🐨">"🐨"</option>
+                <option value="🦩">"🦩"</option>
             </select>
             <input value=mandays.get() on:change=move |e| set_mandays.update(|v| *v = event_target_value(&e).parse::<u32>().unwrap()) />
             <button on:click=add_task>{ "Add" }</button>
